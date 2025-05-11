@@ -8,6 +8,21 @@ import TabItem from "../TabItem";
 
 import "./index.css";
 
+const viewList = [
+  {
+    viewId: "user",
+    viewType: "User",
+  },
+  {
+    viewId: "verifier",
+    viewType: "Verifier",
+  },
+  {
+    viewId: "admin",
+    viewType: "Admin",
+  },
+];
+
 const tabItemsDetails = [
   { tabId: "home", tabName: "Home" },
   { tabId: "payments", tabName: "Payments" },
@@ -16,10 +31,14 @@ const tabItemsDetails = [
 ];
 
 class Header extends Component {
-  state = { tabId: tabItemsDetails[0].tabId };
+  state = { viewId: viewList[0].viewId };
+
+  onChangingView = (event) => {
+    this.setState({ viewId: event.target.value });
+  };
 
   render() {
-    const { tabId } = this.state;
+    const { viewId } = this.state;
     return (
       <nav className="nav-container">
         <p className="app-name">CREDIT APP</p>
@@ -31,6 +50,7 @@ class Header extends Component {
         <div className="btn-container">
           <button type="button" className="btn">
             <FaBell />
+            <p className="notifi-count">4</p>
           </button>
           <button type="button" className="btn">
             <AiFillMessage />
@@ -38,10 +58,14 @@ class Header extends Component {
           <button type="button" className="btn">
             <FaUserCircle />
           </button>
-          <select value={tabId} className="select-btn">
-            {tabItemsDetails.map((i) => (
-              <option key={i.tabId} value={i.tabId}>
-                {i.tabName}
+          <select
+            value={viewId}
+            className="select-btn"
+            onChange={this.onChangingView}
+          >
+            {viewList.map((i) => (
+              <option key={i.viewId} value={i.viewId}>
+                {i.viewType}
               </option>
             ))}
           </select>

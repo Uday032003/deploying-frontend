@@ -88,123 +88,125 @@ const UserDashBoardLoans = () => (
         >
           {(close) => {
             return (
-              <div className="popup-container">
-                <p className="apply-loan-heading">APPLY FOR A LOAN</p>
-                <div className="inps-container">
-                  <div className="left-inps-cont">
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input1">
-                        Full name as it appears on bank account
-                      </label>
-                      <br />
-                      <input
-                        id="input1"
-                        className="inp"
-                        type="text"
-                        placeholder="Full name as it appears on bank account"
-                      />
+              <div className="popup-bg">
+                <form className="popup-container">
+                  <p className="apply-loan-heading">APPLY FOR A LOAN</p>
+                  <div className="inps-container">
+                    <div className="left-inps-cont">
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input1">
+                          Full name as it appears on bank account
+                        </label>
+                        <br />
+                        <input
+                          id="input1"
+                          className="inp"
+                          type="text"
+                          placeholder="Full name as it appears on bank account"
+                        />
+                      </div>
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input2">
+                          Loan tenure(in months)
+                        </label>
+                        <br />
+                        <input
+                          id="input2"
+                          className="inp"
+                          type="text"
+                          placeholder="Loan tenure(in months)"
+                        />
+                      </div>
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input3">
+                          Reason for loan
+                        </label>
+                        <br />
+                        <textarea
+                          id="input3"
+                          className="inp txt"
+                          type="text"
+                          placeholder="Reason for loan"
+                        />
+                      </div>
                     </div>
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input2">
-                        Loan tenure(in months)
-                      </label>
-                      <br />
-                      <input
-                        id="input2"
-                        className="inp"
-                        type="text"
-                        placeholder="Loan tenure(in months)"
-                      />
-                    </div>
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input3">
-                        Reason for loan
-                      </label>
-                      <br />
-                      <textarea
-                        id="input3"
-                        className="inp txt"
-                        type="text"
-                        placeholder="Reason for loan"
-                      />
+                    <div className="right-inps-cont">
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input4">
+                          How much do you need?
+                        </label>
+                        <br />
+                        <input
+                          id="input4"
+                          className="inp"
+                          type="text"
+                          placeholder="How much do you need?"
+                        />
+                      </div>
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input5">
+                          Employment status
+                        </label>
+                        <br />
+                        <input
+                          id="input5"
+                          className="inp"
+                          type="text"
+                          placeholder="Employment status"
+                        />
+                      </div>
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input6">
+                          Employment address
+                        </label>
+                        <br />
+                        <input
+                          id="input6"
+                          className="inp"
+                          type="text"
+                          placeholder="Employment address"
+                        />
+                      </div>
+                      <div className="inp-cont">
+                        <label className="label" htmlFor="input7">
+                          Employment address
+                        </label>
+                        <br />
+                        <input
+                          id="input7"
+                          className="inp"
+                          type="text"
+                          placeholder="Employment address"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="right-inps-cont">
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input4">
-                        How much do you need?
+                  <img
+                    src="https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746931618/Chart_fbrvtt.png"
+                    alt="chart"
+                    className="chart-img"
+                  />
+                  <div className="checks-cont">
+                    <div className="check-cont">
+                      <input type="checkbox" id="checkbox-inp1" />
+                      <label className="label" htmlFor="checkbox-inp1">
+                        I have read the important information and accept that by
+                        completing the application I will be bound by the terms
                       </label>
-                      <br />
-                      <input
-                        id="input4"
-                        className="inp"
-                        type="text"
-                        placeholder="How much do you need?"
-                      />
                     </div>
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input5">
-                        Employment status
+                    <div className="check-cont">
+                      <input type="checkbox" id="checkbox-inp2" />
+                      <label className="label" htmlFor="checkbox-inp2">
+                        Any personal and credit information obtained may be
+                        disclosed from time to time to other lenders, credit
+                        bureaus or other credit reporting agencies.
                       </label>
-                      <br />
-                      <input
-                        id="input5"
-                        className="inp"
-                        type="text"
-                        placeholder="Employment status"
-                      />
-                    </div>
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input6">
-                        Employment address
-                      </label>
-                      <br />
-                      <input
-                        id="input6"
-                        className="inp"
-                        type="text"
-                        placeholder="Employment address"
-                      />
-                    </div>
-                    <div className="inp-cont">
-                      <label className="label" htmlFor="input7">
-                        Employment address
-                      </label>
-                      <br />
-                      <input
-                        id="input7"
-                        className="inp"
-                        type="text"
-                        placeholder="Employment address"
-                      />
                     </div>
                   </div>
-                </div>
-                <img
-                  src="https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746931618/Chart_fbrvtt.png"
-                  alt="chart"
-                  className="chart-img"
-                />
-                <div className="checks-cont">
-                  <div className="check-cont">
-                    <input type="checkbox" id="checkbox-inp1" />
-                    <label className="label" htmlFor="checkbox-inp1">
-                      I have read the important information and accept that by
-                      completing the application I will be bound by the terms
-                    </label>
-                  </div>
-                  <div className="check-cont">
-                    <input type="checkbox" id="checkbox-inp2" />
-                    <label className="label" htmlFor="checkbox-inp2">
-                      Any personal and credit information obtained may be
-                      disclosed from time to time to other lenders, credit
-                      bureaus or other credit reporting agencies.
-                    </label>
-                  </div>
-                </div>
-                <button type="button" className="submit-btn">
-                  Submit
-                </button>
+                  <button type="submit" className="submit-btn">
+                    Submit
+                  </button>
+                </form>
               </div>
             );
           }}

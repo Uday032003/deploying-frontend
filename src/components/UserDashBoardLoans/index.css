@@ -11,6 +11,7 @@
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.25);
   padding: 100px;
+  position: fixed;
 }
 
 .top-cont {
@@ -204,6 +205,11 @@
   height: 80vh;
 }
 
+.popup-bg {
+  height: 600px;
+  overflow-y: auto;
+}
+
 .popup-container {
   display: flex;
   flex-direction: column;
@@ -211,9 +217,7 @@
   align-items: center;
   background-color: white;
   width: 1000px;
-  padding: 80px;
-  height: 800px;
-  overflow-y: auto;
+  padding: 60px;
 }
 
 .apply-loan-heading {
@@ -289,7 +293,7 @@
 .submit-btn {
   background-color: #0a5210;
   width: 100px;
-  height: 75px;
+  height: 60px;
   border: none;
   padding: 20px;
   color: white;
