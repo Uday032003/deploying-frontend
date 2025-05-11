@@ -1,0 +1,103 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #9fa2b4;
+  padding-left: 35px;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.cont-1 {
+  display: flex;
+  align-items: center;
+  width: 42%;
+}
+
+.cont-2 {
+  width: 21%;
+}
+
+.cont-3 {
+  width: 19%;
+}
+
+.status-container {
+  width: 20%;
+  display: flex;
+}
+
+.dots-icon {
+  color: #c5c7cd;
+  position: relative;
+  left: -25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.status {
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.officer-img {
+  margin-right: 20px;
+}
+
+.officer-name {
+  color: #252733;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.update {
+  margin: 0;
+  color: #c5c7cd;
+  font-size: 13px;
+}
+
+.total-loan-amount {
+  color: #252733;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.no-due-status {
+  margin: 0;
+  color: #c5c7cd;
+  font-size: 13px;
+}
+
+.date-applied {
+  color: #252733;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.applied-time {
+  margin: 0;
+  color: #c5c7cd;
+  font-size: 13px;
+}
+
+.blue {
+  background-color: #1829c7;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: #fec400;
+}
+
+.green {
+  background-color: #29cc97;
+}

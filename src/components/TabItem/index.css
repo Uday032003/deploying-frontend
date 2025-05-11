@@ -1,0 +1,22 @@
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #0a512fb2;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.active-tab {
+  color: #064921;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.tab-name {
+  font-size: 17px;
+  font-weight: 500;
+}
