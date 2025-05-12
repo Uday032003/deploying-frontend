@@ -15,10 +15,12 @@ import { BsCalendarCheckFill } from "react-icons/bs";
 import { IoMdSettings } from "react-icons/io";
 import { FaSignOutAlt } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
+import { BsBank2 } from "react-icons/bs";
+import { FaPaypal } from "react-icons/fa";
 
 import "./index.css";
 
-const VerifierSidebar = (props) => {
+const AdminSidebar = (props) => {
   const { closed } = props;
   return (
     <div className={`sidebar-container ${closed ? "closed" : "open"}`}>
@@ -67,6 +69,14 @@ const VerifierSidebar = (props) => {
         <p>Savings</p>
       </div>
       <div className="item">
+        <BsBank2 className="icon" />
+        <p>Other Incomes</p>
+      </div>
+      <div className="item">
+        <FaPaypal className="icon" />
+        <p>Payroll</p>
+      </div>
+      <div className="item">
         <FaShareSquare className="icon" />
         <p>Expenses</p>
       </div>
@@ -93,4 +103,4 @@ const VerifierSidebar = (props) => {
     </div>
   );
 };
-export default VerifierSidebar;
+export default AdminSidebar;

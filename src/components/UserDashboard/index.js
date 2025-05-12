@@ -5,11 +5,11 @@ import { FaSearch } from "react-icons/fa";
 import { FaSortAmountUp } from "react-icons/fa";
 import { FaFilter } from "react-icons/fa";
 
-import AppliedLoanItem from "../AppliedLoanItem";
+import UserBoxItem from "../UserBoxItem";
 
 import "./index.css";
 
-const appliedLoansDetails = [
+const userAppliedLoansDetails = [
   {
     id: 1,
     loanOfficerName: "John Okoh",
@@ -60,7 +60,7 @@ const appliedLoansDetails = [
   },
 ];
 
-const UserDashBoardLoans = () => (
+const UserDashboard = () => (
   <div className="main-container">
     <div className="top-cont">
       <div className="cont1">
@@ -249,11 +249,11 @@ const UserDashBoardLoans = () => (
         <p className="title4">Status</p>
       </div>
       <div className="list-container">
-        {appliedLoansDetails.map((i) => (
-          <AppliedLoanItem key={i.id} item={i} />
+        {userAppliedLoansDetails.map((i) => (
+          <UserBoxItem key={i.id} item={i} />
         ))}
       </div>
     </div>
   </div>
 );
-export default UserDashBoardLoans;
+export default UserDashboard;

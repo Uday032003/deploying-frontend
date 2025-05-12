@@ -5,7 +5,7 @@ import { FaCreditCard } from "react-icons/fa";
 
 import "./index.css";
 
-const TabItem = (props) => {
+const Tab = (props) => {
   const { tabDetails } = props;
   const { tabId, tabName } = tabDetails;
   const tabIcon = () => {
@@ -15,16 +15,16 @@ const TabItem = (props) => {
       return <TbCurrencyNaira className="icon" />;
     } else if (tabId === "budget") {
       return <FaBook className="icon" />;
-    } else if (tabId === "card") {
+    } else {
       return <FaCreditCard className="icon" />;
     }
   };
   return (
-    <li className="tab-container">
+    <li className={`tab-container ${tabId === "home" && "active-tab"}`}>
       {tabIcon()}
       <p className="tab-name">{tabName}</p>
     </li>
   );
 };
 
-export default TabItem;
+export default Tab;

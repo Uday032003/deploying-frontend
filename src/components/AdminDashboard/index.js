@@ -6,14 +6,16 @@ import { FaUserCheck } from "react-icons/fa";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { FaSortAmountUp } from "react-icons/fa";
 import { FaFilter } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
+import { BsBank2 } from "react-icons/bs";
 
 import VerifierAdminBoxItem from "../VerifierAdminBoxItem";
 
 import "./index.css";
 
-const verifierAppliedLoansSectionDetails = [
+const adminRecentLoansSectionDetails = [
   {
-    id: 11,
+    id: 21,
     aboutUpdate: "Contact Email not Linked",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746899129/5_qgvlbx.png",
@@ -25,7 +27,7 @@ const verifierAppliedLoansSectionDetails = [
     update: "1 day ago",
   },
   {
-    id: 12,
+    id: 22,
     aboutUpdate: "Adding Images to Featured Posts",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746967326/5_u3u4ok.png",
@@ -37,7 +39,7 @@ const verifierAppliedLoansSectionDetails = [
     update: "1 day ago",
   },
   {
-    id: 13,
+    id: 23,
     aboutUpdate: "When will I be charged this month?",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746967411/3_uipbgk.png",
@@ -49,43 +51,43 @@ const verifierAppliedLoansSectionDetails = [
     update: "1 day ago",
   },
   {
-    id: 14,
+    id: 24,
     aboutUpdate: "Payment not going through",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746967292/7_kxgqut.png",
     customerName: "Christian Bale",
     updatedDate: "June 08, 2021",
-    status: "VERIFIED",
+    status: "PENDING",
     updatedTime: "5:00 PM",
     loanAppliedDate: "on 24.05.2019",
     update: "2 day ago",
   },
   {
-    id: 15,
+    id: 25,
     aboutUpdate: "Unable to add replies",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746967285/6_ayznii.png",
     customerName: "Henry Cavil",
     updatedDate: "June 08, 2021",
-    status: "VERIFIED",
+    status: "APPROVED",
     updatedTime: "4:00 PM",
     loanAppliedDate: "on 24.05.2019",
     update: "2 day ago",
   },
   {
-    id: 16,
+    id: 26,
     aboutUpdate: "Downtime since last week",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746967276/4_w6zzmw.png",
     customerName: "Chris Evans",
     updatedDate: "June 08, 2021",
-    status: "VERIFIED",
+    status: "APPROVED",
     updatedTime: "2:00 PM",
     loanAppliedDate: "on 23.05.2019",
     update: "3 day ago",
   },
   {
-    id: 17,
+    id: 27,
     aboutUpdate: "Referral Bonus",
     imageUrl:
       "https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746967303/6_zzbsey.png",
@@ -98,22 +100,20 @@ const verifierAppliedLoansSectionDetails = [
   },
 ];
 
-const VerifierDashboard = () => (
+const AdminDashboard = () => (
   <div className="dash-inner-container">
-    <p className="heading">
-      DashBoard&gt;<span className="span-ele">Loans</span>
-    </p>
+    <p className="span-ele heading">Dashboard</p>
     <div className="divs-container">
-      <div className="div-cont">
+      <div className="div-contt">
         <div className="iconn-container">
-          <FaMoneyBill1 />
+          <FaUsers />
         </div>
         <div className="text-container">
-          <p className="total-count">50</p>
-          <p className="about">LOANS</p>
+          <p className="total-count">200</p>
+          <p className="about">ACTIVE USERS</p>
         </div>
       </div>
-      <div className="div-cont">
+      <div className="div-contt">
         <div className="iconn-container">
           <FaUserMinus />
         </div>
@@ -122,7 +122,7 @@ const VerifierDashboard = () => (
           <p className="about">BORROWERS</p>
         </div>
       </div>
-      <div className="div-cont">
+      <div className="div-contt">
         <div className="iconn-container">
           <FaMoneyBills />
         </div>
@@ -131,25 +131,7 @@ const VerifierDashboard = () => (
           <p className="about">CASH DISBURSED</p>
         </div>
       </div>
-      <div className="div-cont">
-        <div className="iconn-container">
-          <FaPiggyBank />
-        </div>
-        <div className="text-container">
-          <p className="total-count">450,000</p>
-          <p className="about">SAVINGS</p>
-        </div>
-      </div>
-      <div className="div-cont">
-        <div className="iconn-container">
-          <FaUserCheck />
-        </div>
-        <div className="text-container">
-          <p className="total-count">30</p>
-          <p className="about">REPAID LOANS</p>
-        </div>
-      </div>
-      <div className="div-cont">
+      <div className="div-contt">
         <div className="iconn-container">
           <TbCurrencyNaira />
         </div>
@@ -158,10 +140,46 @@ const VerifierDashboard = () => (
           <p className="about">CASH RECEIVED</p>
         </div>
       </div>
+      <div className="div-contt">
+        <div className="iconn-container">
+          <FaPiggyBank />
+        </div>
+        <div className="text-container">
+          <p className="total-count">450,000</p>
+          <p className="about">SAVINGS</p>
+        </div>
+      </div>
+      <div className="div-contt">
+        <div className="iconn-container">
+          <FaUserCheck />
+        </div>
+        <div className="text-container">
+          <p className="total-count">30</p>
+          <p className="about">REPAID LOANS</p>
+        </div>
+      </div>
+      <div className="div-contt">
+        <div className="iconn-container">
+          <BsBank2 />
+        </div>
+        <div className="text-container">
+          <p className="total-count">10</p>
+          <p className="about">OTHER ACCOUNTS</p>
+        </div>
+      </div>
+      <div className="div-contt">
+        <div className="iconn-container">
+          <FaMoneyBill1 />
+        </div>
+        <div className="text-container">
+          <p className="total-count">50</p>
+          <p className="about">LOANS</p>
+        </div>
+      </div>
     </div>
     <div className="down-cont">
       <div className="applied-loans-heading-cont">
-        <h1 className="heading">Applied Loans</h1>
+        <h1 className="heading">Recent Loans</h1>
         <div className="icons-container">
           <div className="sort-icon-cont">
             <FaSortAmountUp />
@@ -174,13 +192,13 @@ const VerifierDashboard = () => (
         </div>
       </div>
       <div className="title-cont">
-        <p className="title1">User Recent Activity</p>
+        <p className="title1">User Details</p>
         <p className="title2">Customer Name</p>
         <p className="title3">Date</p>
         <p className="title4">Action</p>
       </div>
       <div className="list-container">
-        {verifierAppliedLoansSectionDetails.map((i) => (
+        {adminRecentLoansSectionDetails.map((i) => (
           <VerifierAdminBoxItem key={i.id} item={i} />
         ))}
       </div>
@@ -201,6 +219,36 @@ const VerifierDashboard = () => (
         className="graph-img"
       />
     </div>
+    <div className="recovery-container">
+      <div className="recovery-container1">
+        <div>
+          <p className="para1">
+            Rate of Recovery (Open, Fully Paid, Default Loans)
+          </p>
+          <p className="para2">
+            Percentage of the due amount that is paid for all loans until today
+          </p>
+          <p className="para3">45%</p>
+        </div>
+        <img
+          src="https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746974750/Group_mgd1r1.png"
+          alt="mini-graph"
+        />
+      </div>
+      <div className="recovery-container2">
+        <div>
+          <p className="para1">Rate of Recovery (Open Loans)</p>
+          <p className="para2">
+            Percentage of the due amount that is paid for open loans until today
+          </p>
+          <p className="para3">35%</p>
+        </div>
+        <img
+          src="https://res.cloudinary.com/dnxaaxcjv/image/upload/v1746974750/Group_mgd1r1.png"
+          alt="mini-graph"
+        />
+      </div>
+    </div>
     <div className="graph3-cont">
       <p className="graph-heading">Number of Repayments Collected - Monthly</p>
       <img
@@ -211,4 +259,4 @@ const VerifierDashboard = () => (
     </div>
   </div>
 );
-export default VerifierDashboard;
+export default AdminDashboard;

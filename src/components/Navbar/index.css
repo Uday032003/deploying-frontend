@@ -14,6 +14,7 @@
   color: #0a512f;
   font-size: 25px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .tabs-container {
@@ -22,9 +23,15 @@
   width: 30%;
 }
 
+@media (orientation: portrait) {
+  .tabs-container {
+    display: none;
+  }
+}
+
 .btn-container {
   display: flex;
-  color: #0a512fb2;
+  color: #0a512f;
 }
 
 .btn {
@@ -32,7 +39,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
-  color: #0a512fb2;
+  color: #0a512f;
   font-size: 20px;
   cursor: pointer;
 }
@@ -46,11 +53,27 @@
 }
 
 .select-btn {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   border: none;
-  color: #0a512fb2;
+  color: #0a512f;
   background-color: transparent;
   width: 70px;
+  cursor: pointer;
+}
+
+.not-dis {
+  display: none;
+}
+
+.nav-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 20px;
+  color: #074418;
+  margin-left: 35px;
   cursor: pointer;
 }

@@ -2,7 +2,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 import "./index.css";
 
-const AppliedLoanItem = (props) => {
+const UserBoxItem = (props) => {
   const { item } = props;
   const {
     loanOfficerName,
@@ -50,4 +50,4 @@ const AppliedLoanItem = (props) => {
     </div>
   );
 };
-export default AppliedLoanItem;
+export default UserBoxItem;
