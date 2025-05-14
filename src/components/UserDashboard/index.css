@@ -208,9 +208,21 @@
   height: 80vh;
 }
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.failed-text {
+  font-size: 40px;
+}
+
 .popup-bg {
   height: 600px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  width: 1000px;
 }
 
 .popup-container {
@@ -219,8 +231,15 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 1000px;
-  padding: 60px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+@media (orientation: portrait) {
+  .popup-bg {
+    width: 300px;
+    overflow-x: hidden;
+  }
 }
 
 .apply-loan-heading {
@@ -266,6 +285,16 @@
   border-radius: 7px;
   border: 1px solid #094a034d;
   padding-left: 10px;
+}
+
+@media (orientation: portrait) {
+  .inp {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .label {
+    font-size: 10px;
+  }
 }
 
 .txt {
@@ -320,4 +349,24 @@
   position: relative;
   top: -80px;
   cursor: pointer;
+}
+
+@media (orientation: portrait) {
+  .submit-btn {
+    position: relative;
+    top: -120px;
+    width: 50px;
+    height: 30px;
+    padding: 0px;
+    left: -80px;
+  }
+  .apply-loan-heading {
+    font-size: 15px;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+  .check-cont {
+    width: 100%;
+  }
 }

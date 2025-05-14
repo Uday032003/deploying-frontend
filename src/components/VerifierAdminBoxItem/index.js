@@ -9,7 +9,6 @@ const VerifierAdminBoxItem = (props) => {
     customerName,
     updatedDate,
     status,
-    id,
     imageUrl,
     updatedTime,
     loanAppliedDate,
@@ -29,7 +28,7 @@ const VerifierAdminBoxItem = (props) => {
   return (
     <div className="list-item">
       <div className="cont-1">
-        <img src={imageUrl} alt={aboutUpdate} className="officer-img" />
+        <img src={imageUrl} alt="logo" className="officer-img" />
         <div className="cont-1-text-img-container">
           <p className="officer-name">{aboutUpdate}</p>
           <p className="update">Updated {update}</p>

@@ -26,7 +26,7 @@ const AdminSidebar = (props) => {
     <div className={`sidebar-container ${closed ? "closed" : "open"}`}>
       <div className="verifier-details-cont">
         <FaUserCircle className="verifier-icon" />
-        <p>John Okoh</p>
+        <p>John Doa</p>
       </div>
       <div className="item">
         <AiFillDashboard className="icon dashboard" />

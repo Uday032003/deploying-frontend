@@ -180,3 +180,14 @@
 .graph-img {
   width: 90%;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.failed-text {
+  font-size: 40px;
+}

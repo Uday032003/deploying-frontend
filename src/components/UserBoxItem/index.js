@@ -9,7 +9,6 @@ const UserBoxItem = (props) => {
     loanAmount,
     dateApplied,
     status,
-    id,
     imageUrl,
     appliedTime,
     noDueStatus,

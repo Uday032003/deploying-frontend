@@ -233,3 +233,14 @@
   font-weight: bold;
   font-size: 36px;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.failed-text {
+  font-size: 40px;
+}
